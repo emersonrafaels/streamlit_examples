@@ -64,3 +64,19 @@ With [Community Cloud](https://streamlit.io/cloud) you can deploy, manage, and s
 ## License
 
 Streamlit is completely free and open-source and licensed under the [Apache 2.0](https://www.apache.org/licenses/LICENSE-2.0) license.
+
+## Examples
+
+1. [Example 01](https://github.com/emersonrafaels/streamlit_examples/blob/master/exemplo_01_if.py):
+
+    1. Uploader
+    2. Show: Json, Image, DateFrame, Chart, Code, Audio.
+    3. Markdown
+    
+1. [Example 02](https://github.com/emersonrafaels/streamlit_examples/blob/master/exemplo_02_expander_date.py):
+
+    1. Select Box
+    2. Date Input
+    3. Time Input
+    4. Markdown
+    5. Sidebar
