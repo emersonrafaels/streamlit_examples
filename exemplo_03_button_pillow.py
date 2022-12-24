@@ -8,7 +8,7 @@ def text_on_image(image, text, font_size, color):
     img = Image.open(image)
 
     # REALIZANDO A DEFINIÇÃO DA FONTE
-    font = ImageFont.truetype('ArianaVioleta-dz2K.ttf', font_size)
+    font = ImageFont.truetype('Caliban-m132.ttf', font_size)
 
     # INSTANCIANDO O DESENHO SOBRE A IMAGEM
     draw = ImageDraw.Draw(img)
