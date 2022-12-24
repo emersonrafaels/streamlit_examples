@@ -65,7 +65,7 @@ With [Community Cloud](https://streamlit.io/cloud) you can deploy, manage, and s
 
 Streamlit is completely free and open-source and licensed under the [Apache 2.0](https://www.apache.org/licenses/LICENSE-2.0) license.
 
-## Examples
+## Examples - This Repo
 
 1. [Example 01](https://github.com/emersonrafaels/streamlit_examples/blob/master/exemplo_01_if.py):
 
