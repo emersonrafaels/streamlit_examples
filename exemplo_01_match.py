@@ -1,5 +1,6 @@
-import streamlit as st
 from json import loads
+
+import streamlit as st
 from pandas import read_csv
 
 # CRIANDO UM MARKDOWN

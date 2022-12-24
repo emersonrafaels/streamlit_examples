@@ -1,7 +1,7 @@
 from os import path
+from json import loads
 
 import streamlit as st
-from json import loads
 from pandas import read_csv
 
 # CRIANDO UM MARKDOWN
@@ -24,7 +24,8 @@ if arquivo:
     # COM ARQUIVO INSERIDO, OBTENDO O TIPO DE ARQUIVO
     print("TIPO DO ARQUIVO: {}".format(arquivo.type))
 
-    file, type = path.splitext(arquivo.type)
+    file, type = str(arquivo.type).split("/")
+
     if type in ['application', 'json']:
         st.json(loads(arquivo.read()))
     elif type in ['image', 'jpg', 'jpeg', 'png']:
