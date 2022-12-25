@@ -73,10 +73,19 @@ Streamlit is completely free and open-source and licensed under the [Apache 2.0]
     2. Show: Json, Image, DateFrame, Chart, Code, Audio.
     3. Markdown
     
-1. [Example 02](https://github.com/emersonrafaels/streamlit_examples/blob/master/exemplo_02_expander_date.py):
+2. [Example 02](https://github.com/emersonrafaels/streamlit_examples/blob/master/exemplo_02_expander_date.py):
 
     1. Select Box
     2. Date Input
     3. Time Input
     4. Markdown
     5. Sidebar
+    
+2. [Example 03](https://github.com/emersonrafaels/streamlit_examples/blob/master/exemplo_03_button_pillow.py)
+
+    1. File Uploader
+    2. Text Input
+    3. Color Picker
+    4. Number Input
+    5. Button
+    6. Download button
