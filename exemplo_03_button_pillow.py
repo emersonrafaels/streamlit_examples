@@ -20,6 +20,13 @@ def text_on_image(image, text, font_size, color):
     # OBTENDO O TAMANHO DA FONTE
     fw, fh = font.getsize(text)
 
+    # VERIFICANDO SE O TAMANHO DA FONTE NÃO É MAIOR QUE O TAMANHO DA IMAGEM
+    if fw > iw:
+        fw = iw / 3
+
+    elif fh > ih:
+        fh = ih / 3
+
     # ESCREVENDO SOBRE A IMAGEM - CENTRALIZANDO
     # LARGURA: (LARGURA TOTAL DA IMAGEM - LARGURA DA FONTE)/2
     # ALTURA: (ALTURA TOTAL DA IMAGEM - ALTURA DA FONTE)/2
