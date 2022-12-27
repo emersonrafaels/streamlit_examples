@@ -90,10 +90,12 @@ Streamlit is completely free and open-source and licensed under the [Apache 2.0]
     5. Button
     6. Download button
     
-4. [Example 04](https://github.com/emersonrafaels/streamlit_examples/blob/master/exemplo_03_button_pillow.py)
+4. [Example 04](https://github.com/emersonrafaels/streamlit_examples/blob/master/exemplo_04_spacy_nlp.py)
 
     1. Expander
     2. Columns
     3. Json
     4. Sidebar
     5. SelectBox
+	6. Multiselect
+	7. Container
