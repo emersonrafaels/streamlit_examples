@@ -81,7 +81,7 @@ Streamlit is completely free and open-source and licensed under the [Apache 2.0]
     4. Markdown
     5. Sidebar
     
-2. [Example 03](https://github.com/emersonrafaels/streamlit_examples/blob/master/exemplo_03_button_pillow.py)
+3. [Example 03](https://github.com/emersonrafaels/streamlit_examples/blob/master/exemplo_03_button_pillow.py)
 
     1. File Uploader
     2. Text Input
@@ -89,3 +89,11 @@ Streamlit is completely free and open-source and licensed under the [Apache 2.0]
     4. Number Input
     5. Button
     6. Download button
+    
+4. [Example 04](https://github.com/emersonrafaels/streamlit_examples/blob/master/exemplo_03_button_pillow.py)
+
+    1. Expander
+    2. Columns
+    3. Json
+    4. Sidebar
+    5. SelectBox
