@@ -1,0 +1,8 @@
+[default]
+STYLES_CSS = 'styles/style.css'
+PAGE_AUTHENTICATION = "credentials/credentials.yaml"
+LOGO_APP = "assets/itau.png"
+
+
+[development]
+DATA_DIR_AGENCIAS = "DATA/BASE_COM_CEP.xlsx"
