@@ -86,8 +86,8 @@ def convert_df_html(
 
 
 @calculate_time_usage
-@st.cache_resource
-def load_map(data=None, circle_radius=0, validator_add_layer=False):
+def load_map(data=pd.DataFrame(), circle_radius=0, validator_add_layer=False):
+
     def add_layers_control(mapobj, validator_add_layer=False):
         if validator_add_layer:
             # ADICIONANDO OS LAYERS
@@ -152,21 +152,34 @@ def load_map(data=None, circle_radius=0, validator_add_layer=False):
 
         return mapobj
 
-    # CRIANDO O MAPA
-    footprint_map = folium.Map(
-        location=[-15.768857589354258, -47.905384728712384],
-        zoom_start=4,
-        tiles="openstreetmap",
-    )
+    if not data.equals(st.session_state.get('current_selected_dataframe')):
 
-    # ADICIONANDO LAYERS
-    footprint_map = add_layers_control(
-        mapobj=footprint_map, validator_add_layer=validator_add_layer
-    )
+        print("ENTROU NO RELOAD DO MAPA")
 
-    # ADICIONANDO MAKERS
-    footprint_map = add_markers(
-        mapobj=footprint_map, data=data, circle_radius=circle_radius
-    )
+        # CRIANDO O MAPA
+        footprint_map = folium.Map(
+            location=[-15.768857589354258, -47.905384728712384],
+            zoom_start=4,
+            tiles="openstreetmap",
+        )
 
-    return footprint_map
+        # ADICIONANDO LAYERS
+        footprint_map = add_layers_control(
+            mapobj=footprint_map, validator_add_layer=validator_add_layer
+        )
+
+        # ADICIONANDO MAKERS
+        footprint_map = add_markers(
+            mapobj=footprint_map, data=data, circle_radius=circle_radius
+        )
+
+        # ARMAZENANDO DATAFRAME ATUAL NO SESSION STATE
+        st.session_state['current_selected_dataframe'] = data
+
+        # ARMAZENANDO MAPA ATUAL NO SESSION STATE
+        st.session_state['mapa_autosservico'] = footprint_map
+
+        return footprint_map
+
+    else:
+        return st.session_state.get('mapa_autosservico')
